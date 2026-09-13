@@ -7,7 +7,7 @@
 > premise is not original work.
 >
 > For original infrastructure and detection engineering, see
-> **[sentinel-secure-ingestion](https://github.com/Oshun2/sentinel-secure-ingestion)** —
+> **[sentinel-secure-ingestion](https://github.com/Oreedtech/sentinel-secure-ingestion)** —
 > a private-only Sentinel ingestion pipeline in Terraform with custom policy-as-code
 > enforcement.
 
