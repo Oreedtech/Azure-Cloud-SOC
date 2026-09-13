@@ -1,6 +1,16 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
 ![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
 
+> **Scope:** A guided hands-on lab built in March 2023, following the widely-used Azure
+> honeynet walkthrough. The architecture, hardening decisions, KQL queries, and the
+> before/after measurements are my own execution in my own subscription — the lab
+> premise is not original work.
+>
+> For original infrastructure and detection engineering, see
+> **[sentinel-secure-ingestion](https://github.com/Oshun2/sentinel-secure-ingestion)** —
+> a private-only Sentinel ingestion pipeline in Terraform with custom policy-as-code
+> enforcement.
+
 ## Introduction
 
 In this project, I build a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, apply some security controls to harden the environment, measure metrics for another 24 hours, then show the results below. The metrics we will show are:
@@ -72,4 +82,4 @@ Stop Time	2023-03-19 15:37
 
 In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
 
-It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.-Cloud-SOC.
+It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
